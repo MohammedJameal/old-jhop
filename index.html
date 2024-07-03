@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>OLD JHOP || FURNITURES</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo">OLD JHOP</a>
+      <ul class="nav">
+        <li>
+          <a class="nav-btn active" href="/"
+            ><ion-icon name="home-outline"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a class="nav-btn" href="#" data-target="exhibition">exhibition</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="#" data-target="collection">Collection</a>
+        </li>
+        <li><a class="nav-btn" href="#" data-target="events">events</a></li>
+        <li><a class="nav-btn" href="#" data-target="shop">shop</a></li>
+      </ul>
+      <a href="#" class="bag">
+        <ion-icon name="bag-outline"></ion-icon>
+        <span class="number">5</span>
+      </a>
+      <a href="#" class="menu" onclick="toggleMenu()" >
+        <ion-icon name="grid-outline"></ion-icon>
+      </a>
+    </header>
+    <ul class="nav-mobile">
+      <li><a class="nav-btn" href="/"><ion-icon name="home-outline"></ion-icon></a></li>
+      <li><a class="nav-btn" href="#" data-target="exhibition">Exhibition</a></li>
+      <li><a class="nav-btn" href="#" data-target="collection">Collection</a></li>
+      <li><a class="nav-btn" href="#" data-target="events">Events</a></li>
+      <li><a class="nav-btn" href="#" data-target="shop">Shop</a></li>
+    </ul>
+    <div class="banner container-fluid">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-5 col-md-12">
+          <!-- apply bootstrap corsel  -->
+          <div id="carouselIndicators" class="carousel slide">
+            <!-- <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div> -->
+            <div class="carousel-inner">
+              <!-- carousal item index 0  -->
+              <div class="carousel-item active">
+                <div class="content">
+                  <h1>OLD JHOP</h1>
+                  <h4>Empreur Seat</h4>
+                  <p>
+                    Welcome to Old Jhop, where the allure of yesteryears meets the craftsmanship of today. We specialize in curated collections of high-quality vintage furniture, each piece telling its own unique story. Discover timeless pieces that blend nostalgia with durability, perfect for adding character and style to any space. Whether you're a collector, a decorator, or simply seeking that one-of-a-kind find, Old Jhop invites you to explore our curated selection and bring a piece of history into your home.
+                  </p>
+                  <a data-bs-toggle="modal" data-bs-target="#itemModal" class="content-btn" href="#">Book Exhibition</a>
+                </div>
+              </div>
+              <!-- carousal item index 1  -->
+              <div class="carousel-item">
+                <div class="content">
+                  <h1>Royal</h1>
+                  <h4>Furniture</h4>
+                  <p>
+                    At Old Jhop, our furniture embodies the perfect blend of timeless elegance and enduring craftsmanship. Each piece is meticulously selected for its quality, character, and ability to stand the test of time. From vintage treasures that tell stories of the past to modern classics that define contemporary living, our collection caters to every taste and style.
+                  </p>
+                  <a class="content-btn" href="#">Book Exhibition</a>
+                </div>
+              </div>
+              <!-- carousal item index 2 -->
+              <div class="carousel-item">
+                <div class="content">
+                  <h1>Antique</h1>
+                  <h4>Book Collection</h4>
+                  <p>
+                    At Old Jhop, our book collection is a testament to the enduring allure of literature and knowledge. Carefully curated and spanning genres from classics to contemporary, each book is selected for its quality and character.
+                  </p>
+                  <a class="content-btn" href="#">Book Exhibition</a>
+                </div>
+              </div>
+              <!-- carousal item index 3-->
+              <div class="carousel-item">
+                <div class="content">
+                  <h1>royal</h1>
+                  <h4>Timber Chair</h4>
+                  <p>
+                    Step into sophistication with our timber chairs at Old Jhop. Crafted from the finest woods and designed with a keen eye for elegance, each timber chair embodies a blend of sturdy construction and timeless style.
+                  </p>
+                  <a class="content-btn" href="#">Book Exhibition</a>
+                </div>
+              </div>
+              <!-- carousal item index 4-->
+              <div class="carousel-item">
+                <div class="content">
+                  <h1>royal</h1>
+                  <h4>Hand Fan</h4>
+                  <p>
+                    Step into the elegance of a bygone era with our exquisite hand fan collection at Old Jhop. Each fan is a masterpiece of artistry and craftsmanship, crafted from fine materials such as silk, lace, and delicate woods. 
+                  </p>
+                  <a class="content-btn" href="#">Book Exhibition</a>
+                </div>
+              </div>
+              <!-- carousal item index 5 -->
+              <div class="carousel-item">
+                <div class="content">
+                  <h1>royal</h1>
+                  <h4>Paired Vases</h4>
+                  <p>
+                    At Old Jhop, discover the timeless allure of paired vases that embody both beauty and functionality. Each set is meticulously selected to complement each other, showcasing a harmonious blend of craftsmanship and artistic expression. Whether you're looking to adorn a mantelpiece, elevate a dining table, or enhance a serene corner, our paired vases offer a captivating focal point.
+                  </p>
+                  <a class="content-btn" href="#">Book Exhibition</a>
+                </div>
+              </div>
+              <!-- carousal item index 6-->
+              <div class="carousel-item">
+                <div class="content">
+                  <h1>Elagant</h1>
+                  <h4>Paired yases</h4>
+                  <p>
+                    t Old Jhop, discover the timeless allure of paired vases that embody both beauty and functionality. Each set is meticulously selected to complement each other, showcasing a harmonious blend of craftsmanship and artistic expression. Whether you're looking to adorn a mantelpiece, elevate a dining table, or enhance a serene corner, our paired vases offer a captivating focal point.
+                  </p>
+                  <a class="content-btn" href="#">Book Exhibition</a>
+                </div>
+              </div>
+              <!-- carousal item index 7-->
+              <div class="carousel-item">
+                <div class="content">
+                  <h1>Golden</h1>
+                  <h4>Red Pearl</h4>
+                  <p>
+                    "Red Pearl" evokes a vision of timeless elegance and understated luxury. At Old Jhop, our collection featuring "Red Pearl" items embodies this essence perfectly.
+                  </p>
+                  <a class="content-btn" href="#">Book Exhibition</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-12">
+          <div id="drag-container">
+            <div id="spin-container">
+              <img
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="0"
+                src="./images/antique-1.png"
+                alt=""
+              />
+              <img
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="1"
+                src="./images/antique-2.png"
+                alt=""
+              />
+              <img
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="2"
+                src="./images/antique-3.png"
+                alt=""
+              />
+              <img
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="3"
+                src="./images/antique-4.png"
+                alt=""
+              />
+              <img
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="4"
+                src="./images/antique-5.png"
+                alt=""
+              />
+              <img
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="5"
+                src="./images/antique-6.png"
+                alt=""
+              />
+              <img
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="6"
+                src="./images/antique-7.png"
+                alt=""
+              />
+              <img
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="7"
+                src="./images/antique-8.png"
+                alt=""
+              />
+              <h1>JSOP FURNITURE</h1>
+            </div>
+            <div id="ground"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main section start  -->
+    <main>
+      <section id="exhibition" class="exhibition">
+        <div class="exhibition-title">
+          <h1>Exhibition</h1>
+        </div>
+        <div class="section-content container-fluid">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <img
+                    src="./images/exhibition-1.png"
+                    alt=""
+                    class="exhibition-img img-fluid"
+                  />
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                  <div class="content">
+                    <h4>Timber Chair</h4>
+                  <p>
+                    Step into sophistication with our timber chairs at Old Jhop. Crafted from the finest woods and designed with a keen eye for elegance, each timber chair embodies a blend of sturdy construction and timeless style.
+                  </p>
+                    <h4 class="price">$20.10</h4>
+                    <a href="#" class="content-btn">Book Ticket</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <img
+                    src="./images/exhibition-5.png"
+                    alt=""
+                    class="exhibition-img img-fluid"
+                  />
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                  <div class="content">
+                    <h4>Paired Vases</h4>
+                    <p>
+                      At Old Jhop, discover the timeless allure of paired vases that embody both beauty and functionality. Each set is meticulously selected to complement each other, showcasing a harmonious blend of craftsmanship and artistic expression. Whether you're looking to adorn a mantelpiece, elevate a dining table, or enhance a serene corner, our paired vases offer a captivating focal point.
+                    </p>
+                    <h4 class="price">$20.10</h4>
+                    <a href="#" class="content-btn">Book Ticket</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <img
+                    src="./images/exhibition-2.png"
+                    alt=""
+                    class="exhibition-img img-fluid"
+                  />
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                  <div class="content">
+                    <h4>Furniture</h4>
+                    <p>
+                      At Old Jhop, our furniture embodies the perfect blend of timeless elegance and enduring craftsmanship. Each piece is meticulously selected for its quality, character, and ability to stand the test of time. From vintage treasures that tell stories of the past to modern classics that define contemporary living, our collection caters to every taste and style.
+                    </p>
+                    <h4 class="price">$20.10</h4>
+                    <a href="#" class="content-btn">Book Ticket</a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section id="collection" class="collection">
+        <div class="collection-title">
+          <h1>
+            col <br />
+            lec <br />
+            tion
+          </h1>
+        </div>
+        <div class="section-content container-fluid">
+          <div class="row">
+            <div class="col-lg-8 d-flex align-items-center justify-content-end">
+              <!-- Slider main container -->
+              <div class="swiper artsSwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide d-flex align-items-center justify-content-end">
+                    <div class="arts-item">
+                        <div class="img-box">
+                            <img src="./images/collection-1.jpeg" alt="" class="arts-img img-fluid">
+                            <img class="arts-frame img-fluid" src="./images/frame.png" alt="" srcset="">
+                        </div>
+                        <h3 class="me-3">This is arts name</h3>
+                    </div>
+                  </div>
+                  <!-- slider2 -->
+                  <div class="swiper-slide d-flex align-items-center justify-content-end">
+                    <div class="arts-item">
+                        <div class="img-box">
+                            <img src="./images/collection-2.jpeg" alt="" class="arts-img img-fluid">
+                            <img class="arts-frame img-fluid" src="./images/frame.png" alt="" srcset="">
+                        </div>
+                        <h3 class="me-3">This is arts name</h3>
+                    </div>
+                  </div>
+                  <!-- slider3 -->
+                  <div class="swiper-slide d-flex align-items-center justify-content-end">
+                    <div class="arts-item">
+                        <div class="img-box">
+                            <img src="./images/collection-3.jpg" alt="" class="arts-img img-fluid">
+                        </div>
+                        <h3 class="me-3">This is arts name</h3>
+                    </div>
+                  </div>
+                  <!-- slider4 -->
+                  <div class="swiper-slide d-flex align-items-center justify-content-end">
+                    <div class="arts-item">
+                        <div class="img-box">
+                            <img src="./images/collection-4.jpeg" alt="" class="arts-img img-fluid">
+                            <img class="arts-frame img-fluid" src="./images/frame.png" alt="" srcset="">
+                        </div>
+                        <h3 class="me-3">This is arts name</h3>
+                    </div>
+                  </div>
+                  <!-- slider5 -->
+                  <div class="swiper-slide d-flex align-items-center justify-content-end">
+                    <div class="arts-item">
+                        <div class="img-box">
+                            <img src="./images/collection-5.jpeg" alt="" class="arts-img img-fluid">
+                            <img class="arts-frame img-fluid" src="./images/frame.png" alt="" srcset="">
+                        </div>
+                        <h3 class="me-3">This is arts name</h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="arts-description flex-column">
+                    <p class="d-inline-flex justify-content-start align-items-center gap-3"><ion-icon name="arrow-back-outline"></ion-icon>Arts Items Description Here</p>
+                    
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="events" class="events">
+        <div class="section-content container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./images/events-1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center">
+                    <h1>Step into a world of refined elegance with indoor events hosted by Old Jhop.</h1>
+                    <h4>Events Time :Mon - Fri , 11.00am-10.00pm</h4>
+                    <p>Nestled amidst our curated collection of vintage furniture and decor, each event is tailored to create unforgettable memories. From intimate gatherings to larger affairs, Old Jhop provides a distinctive ambiance that combines classic style with modern comforts. Let us help you orchestrate an indoor event that reflects your unique vision and leaves a lasting impression on your guests.
+                    </p>
+                    <a href="#" class="content-btn">Book Now</a>
+
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-6 d-flex flex-column align-items-end justify-content-end">
+                    <h1 class="text-end">Step into a world of timeless charm and natural beauty with outdoor events hosted by Old Jhop. </h1>
+                    <h4>Events Time : Mon - Sun , 6.00am - 11.00pm</h4>
+                    <p class="text-end">Imagine exchanging vows under a canopy of trees, dining al fresco amidst blooming flowers, or networking in a relaxed garden setting. With our attention to detail and commitment to quality, we ensure that your outdoor event is not only seamless but also unforgettable. Let Old Jhop be your partner in creating moments of joy, beauty, and connection in the embrace of nature's splendor.</p>
+                    <a href="#" class="content-btn">Book Now</a>
+
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/events-2.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="shop" class="shop">
+        <div class="section-content container">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-filters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-gifts">Gifts</li>
+                        <li data-filter=".filter-collectibles">Collectibles</li>
+                        <li data-filter=".filter-books">Books</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-gifts">
+                    <div class="portfolio-wrap">
+                        <img src="./images/portfolio-1 (1).jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Gift One</h4>
+                            <p>$10.00</p>
+                            <div class="portfolio-links">
+                                <a href="./images/portfolio-1 (1).jpg"><ion-icon name="bag-add-outline"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                    <div class="portfolio-wrap">
+                        <img src="./images/portfolio-2 (1).jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Gift One</h4>
+                            <p>$10.00</p>
+                            <div class="portfolio-links">
+                                <a href="./images/portfolio-2 (1).jpg"><ion-icon name="bag-add-outline"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-gifts">
+                    <div class="portfolio-wrap">
+                        <img src="./images/portfolio-3 (1).jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Gift One</h4>
+                            <p>$10.00</p>
+                            <div class="portfolio-links">
+                                <a href="./images/portfolio-3 (1).jpg"><ion-icon name="bag-add-outline"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-collectibles">
+                    <div class="portfolio-wrap">
+                        <img src="./images/portfolio-4 (1).jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Gift One</h4>
+                            <p>$10.00</p>
+                            <div class="portfolio-links">
+                                <a href="./images/portfolio-4 (1).jpg"><ion-icon name="bag-add-outline"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                    <div class="portfolio-wrap">
+                        <img src="./images/portfolio-5 (1).jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Gift One</h4>
+                            <p>$10.00</p>
+                            <div class="portfolio-links">
+                                <a href="./images/portfolio-5 (1).jpg"><ion-icon name="bag-add-outline"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-gifts">
+                    <div class="portfolio-wrap">
+                        <img src="./images/portfolio-6 (1).jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Gift One</h4>
+                            <p>$10.00</p>
+                            <div class="portfolio-links">
+                                <a href="./images/portfolio-6 (1).jpg"><ion-icon name="bag-add-outline"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-collectibles">
+                    <div class="portfolio-wrap">
+                        <img src="./images/portfolio-7 (1).jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Gift One</h4>
+                            <p>$10.00</p>
+                            <div class="portfolio-links">
+                                <a href="./images/portfolio-7 (1).jpg"><ion-icon name="bag-add-outline"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-collectibles">
+                    <div class="portfolio-wrap">
+                        <img src="./images/portfolio-8 (1).jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Gift One</h4>
+                            <p>$10.00</p>
+                            <div class="portfolio-links">
+                                <a href="./images/portfolio-8 (1).jpg"><ion-icon name="bag-add-outline"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                    <div class="portfolio-wrap">
+                        <img src="./images/portfolio-9 (1).jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Gift One</h4>
+                            <p>$10.00</p>
+                            <div class="portfolio-links">
+                                <a href="./images/portfolio-9 (1).jpg"><ion-icon name="bag-add-outline"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <div class="modal fade" id="itemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">BOOK YOUR FAVOURITE EXHIBITIONS NOW !</h1>
+          </div>
+          <div class="modal-body">
+           <div class="container contact">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="info-box mb-4">
+                  <ion-icon name="navigate-circle-outline"></ion-icon>
+                  <h3>Exhibition Location</h3>
+                  <p>Tamilnadu,Coimbatore,641001</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="info-box mb-4">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <h3>G-mail US</h3>
+                  <p>mohammedjameal031@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="info-box mb-4">
+                  <ion-icon name="call-outline"></ion-icon>
+                  <h3>Call US</h3>
+                  <p>+91 8056411040</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.2482200080044!2d76.95130433603595!3d10.944613100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85bb829225483%3A0xcd5ec5c4cf60180f!2sKulathupalayam%20Rd%2C%20Balu%20Avenue%2C%20BK%20Pudur%2C%20Kovaipudur%2C%20Kuniyamuthur%2C%20Tamil%20Nadu%20641042!5e0!3m2!1sen!2sin!4v1719927154088!5m2!1sen!2sin" width=100% height=384px style="border:0;" allowfullscreen="" frameborder="0"></iframe>
+              </div>
+              <div class="col-lg-6">
+                <form class="contact-form">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Nmae" required />
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required/>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="subject" required />
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea name="message" class="form-control" id="message" rows="5" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="content-btn">Book now</button>
+                  </div>                
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <ul class="sci">
+                <li><a href="https://www.instagram.com/jamzee_31?igsh=a2c5c2ZuZDgxMXV4"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/jamzee_31?igsh=a2c5c2ZuZDgxMXV4"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/jamzee_31?igsh=a2c5c2ZuZDgxMXV4"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/jamzee_31?igsh=a2c5c2ZuZDgxMXV4"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+            </div>
+           </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="modal-close-btn" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- bootstap link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/carouseal.js"></script>
+    <script src="./js/isotope.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
